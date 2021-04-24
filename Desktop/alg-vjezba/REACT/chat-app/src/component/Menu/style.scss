@@ -1,0 +1,44 @@
+@import '../../colors';
+
+.menu {
+  background: var(--theme-color-darker);
+  padding: 7px 0;
+
+  .menu-icon {
+    justify-content: flex-end;
+
+    .user-icon {
+      width: 30px;
+      border-radius: 50%;
+      height: 30px;
+      object-fit: cover;
+    }
+
+    .user-name {
+      margin: 0 10px;
+    }
+
+    > .menu-toggler {
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .side-navigation {
+    position: absolute;
+    right: 0;
+    background: var(--theme-color-darker);
+    padding: 10px;
+    max-width: 180px;
+    width: 100%;
+    margin-top: 10px;
+
+    &--item {
+      margin: 10px 0;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
